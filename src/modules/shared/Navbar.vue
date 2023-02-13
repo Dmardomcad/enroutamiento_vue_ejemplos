@@ -1,8 +1,12 @@
 <template>
     <div>
-        <router-link to="/">Pokemon List</router-link>
+        <router-link :to="{name: 'pokemon-home'}">Pokemon List</router-link>
         <router-link :to="{ name: 'pokemonId',params: { id:1 } }">Pokemon por id's</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link :to="{name: 'pokemon-about'}">About</router-link>
+        
+        <!-- Spiderman menu -->
+        <router-link :to="{name: 'spiderman-home'}">Characters</router-link>
+        <router-link :to="{name: 'spiderman-about'}">Spiderman About</router-link>
     </div>
 </template>
 
